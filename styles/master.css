@@ -115,7 +115,26 @@ header span img{
   right: 0;
 }
 
+.main__red{
+  width: 166px;
+  height: 302px;
 
+  background: #F02828;
+
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-flow: wrap column;
+  align-content: flex-end;
+}
+
+.circle {
+  width: 69px;
+  height: 69px;
+  border-radius: 100%;
+
+  background: #282828;
+}
 
 
 
@@ -132,4 +151,6 @@ header span img{
 
 как можно спозиционировать эти классы чтобы...
 
-картинка с полукругами не доходит до правого края, хотя right 0*/
+картинка с полукругами не доходит до правого края, хотя right 0
+
+как сделать, чтобы круги доходили до низа дива*/
