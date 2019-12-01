@@ -1,0 +1,86 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "Druk";
+  font-weight: bold;
+  src: url(../fonts/DrukTextWide-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Fugue";
+  font-weight: normal;
+  src: url(fonts/fugue_regular.otf) format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body{
+  font-family: "Druk", sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.header__white_rectangles{
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 90px;
+  height: 60px;
+  position: fixed;
+  z-index: 2;
+}
+
+.white_rectangle{
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid #fff;
+  border-right: 30px solid transparent;
+}
+
+header img{
+  width: 224px;
+  height: 356px;
+  z-index: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header h1{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4vh;
+  line-height: 1.45vh;
+
+  padding: 24px 18px;
+  position: fixed;
+  margin-top: 77px;
+  z-index: 3;
+}
+
+.header__box{
+  width: 27px;
+  height: 190px;
+  background: #282828;
+
+  position: absolute;
+  top: 116px;
+  z-index: 2;
+}
+
+.header__black_rectangle{
+  width: 106px;
+  height: 106px;
+
+  background: #282828;
+
+  position: fixed;
+
+  z-index: 2;
+}
