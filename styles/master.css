@@ -55,8 +55,8 @@ header img{
 header h1{
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.4vh;
-  line-height: 1.45vh;
+  font-size: 2.7vw;
+  line-height: 2.75vw;
 
   padding: 24px 18px;
   position: fixed;
@@ -74,13 +74,62 @@ header h1{
   z-index: 2;
 }
 
+/* правая часть вверх */
+
+span{
+  float: right;
+}
+
 .header__black_rectangle{
   width: 106px;
   height: 106px;
 
   background: #282828;
 
-  position: fixed;
-
   z-index: 2;
 }
+
+
+.header__span{
+  display: flex;
+  flex-direction: column;
+}
+
+.header__span__line{
+  width: 100px;
+  height: 9px;
+  padding-top: 8px;
+
+  color: #F02828;
+
+  position: fixed;
+  z-index: 3;
+}
+
+
+header span img{
+  width: 60px;
+  height: 93px;
+
+  position: relative;
+  right: 0;
+}
+
+
+
+
+
+
+/* размер экрана фигмы и браузера не совпадает
+
+блок уходит влево
+
+позиционирование плохо?
+
+как приклеить элемент к правому краю если он спизиционирован, float  не работает и размер экрана не тот
+
+не видно header__span__line
+
+как можно спозиционировать эти классы чтобы...
+
+картинка с полукругами не доходит до правого края, хотя right 0*/
