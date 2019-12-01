@@ -123,9 +123,12 @@ header span img{
 
   position: fixed;
   bottom: 0;
+
   display: flex;
   flex-flow: wrap column;
   align-content: flex-end;
+
+  z-index: 3;
 }
 
 .circle {
@@ -136,6 +139,39 @@ header span img{
   background: #282828;
 }
 
+.main__green{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+}
+
+
+.main__green__rectan{
+  width: 24px;
+  background: #426651;
+}
+
+.main__green__rectan:nth-child(1){
+  height: 167px;
+}
+
+.main__green__rectan:nth-child(2){
+  height: 188px;
+}
+
+.main__green__rectan:nth-child(3),
+.main__green__rectan:nth-child(4),
+.main__green__rectan:nth-child(5),
+.main__green__rectan:nth-child(6),
+.main__green__rectan:nth-child(7),
+{
+  height: 207px;
+}
 
 
 
@@ -153,4 +189,6 @@ header span img{
 
 картинка с полукругами не доходит до правого края, хотя right 0
 
-как сделать, чтобы круги доходили до низа дива*/
+как сделать, чтобы круги доходили до низа дива
+
+почему часть хелегых внизу*/
