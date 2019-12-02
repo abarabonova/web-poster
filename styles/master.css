@@ -168,10 +168,29 @@ header span img{
 .main__green__rectan:nth-child(4),
 .main__green__rectan:nth-child(5),
 .main__green__rectan:nth-child(6),
-.main__green__rectan:nth-child(7),
+.main__green__rectan:nth-child(7)
 {
   height: 207px;
 }
+
+.casino{
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+}
+
+.casino img{
+  width: 124px;
+  height: 124px;
+  margin-bottom: -80px;
+}
+
+
+
 
 
 
@@ -191,4 +210,6 @@ header span img{
 
 как сделать, чтобы круги доходили до низа дива
 
-почему часть хелегых внизу*/
+как можно убрать пробелы между дивами
+
+как позиционировать элементы такие как фишки, если изначально они идут с праваой стороны экрана, а на других носителях могут быть и в середине*/
