@@ -43,8 +43,8 @@ body{
 }
 
 header img{
-  width: 224px;
-  height: 356px;
+  width: 70%;
+  height: auto;
   z-index: 1;
 
   position: absolute;
@@ -55,8 +55,8 @@ header img{
 header h1{
   text-transform: uppercase;
   color: #fff;
-  font-size: 2.7vw;
-  line-height: 2.75vw;
+  font-size: 8vw;
+  line-height: 8.5vw;
 
   padding: 24px 18px;
   position: fixed;
@@ -81,7 +81,7 @@ span{
 }
 
 .header__black_rectangle{
-  width: 106px;
+  width: 77px;
   height: 106px;
 
   background: #282828;
