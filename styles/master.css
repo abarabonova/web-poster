@@ -8,24 +8,25 @@
 @font-face {
   font-family: "Fugue";
   font-weight: normal;
-  src: url(fonts/fugue_regular.otf) format('truetype');
+  src: url(../fonts/fugue_regular.otf) format('truetype');
 }
 
 * {
   box-sizing: border-box;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 
 
-body{
+body {
   font-family: "Druk", sans-serif;
   font-weight: bold;
   overflow: hidden;
 }
 
-.header__white_rectangles{
+.header__white_rectangles {
   display: flex;
   flex-wrap: wrap;
 
@@ -35,24 +36,25 @@ body{
   z-index: 2;
 }
 
-.white_rectangle{
+.white_rectangle {
   width: 0px;
   height: 0px;
   border-top: 30px solid #fff;
   border-right: 30px solid transparent;
 }
 
-header img{
-  width: 70%;
+header img {
+  width: 67%;
   height: auto;
   z-index: 1;
+  max-height: 400px;
 
   position: absolute;
   top: 0;
   left: 0;
 }
 
-header h1{
+header h1 {
   text-transform: uppercase;
   color: #fff;
   font-size: 8vw;
@@ -64,7 +66,7 @@ header h1{
   z-index: 3;
 }
 
-.header__box{
+.header__box {
   width: 27px;
   height: 190px;
   background: #282828;
@@ -76,11 +78,11 @@ header h1{
 
 /* правая часть вверх */
 
-span{
+span {
   float: right;
 }
 
-.header__black_rectangle{
+.header__black_rectangle {
   width: 77px;
   height: 106px;
 
@@ -90,12 +92,12 @@ span{
 }
 
 
-.header__span{
+.header__span {
   display: flex;
   flex-direction: column;
 }
 
-.header__span__line{
+.header__span__line {
   width: 100px;
   height: 9px;
   padding-top: 8px;
@@ -107,7 +109,7 @@ span{
 }
 
 
-header span img{
+header span img {
   width: 60px;
   height: 93px;
 
@@ -115,7 +117,7 @@ header span img{
   right: 0;
 }
 
-.main__red{
+.main__red {
   width: 166px;
   height: 302px;
 
@@ -139,7 +141,7 @@ header span img{
   background: #282828;
 }
 
-.main__green{
+.main__green {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -151,17 +153,17 @@ header span img{
 }
 
 
-.main__green__rectan{
+.main__green__rectan {
   width: 24px;
   background: #426651;
 }
 
-.main__green__rectan:nth-child(1){
-  height: 167px;
+.main__green__rectan:nth-child(1) {
+  height: 29vh;
 }
 
-.main__green__rectan:nth-child(2){
-  height: 188px;
+.main__green__rectan:nth-child(2) {
+  height: 33.5vh;
 }
 
 .main__green__rectan:nth-child(3),
@@ -170,10 +172,10 @@ header span img{
 .main__green__rectan:nth-child(6),
 .main__green__rectan:nth-child(7)
 {
-  height: 207px;
+  height: 36.5vh;
 }
 
-.casino{
+.casino {
   display: flex;
   flex-direction: column;
 
@@ -183,30 +185,209 @@ header span img{
   margin-bottom: 20px;
 }
 
-.casino img{
+.casino img {
   width: 124px;
-  height: 124px;
   margin-bottom: -80px;
+}
+
+.main__black {
+  width: 80vw;
+  height: 21vh;
+  background-color: #282828;
+
+  position: fixed;
+  transform: translateY(90vw);
+  z-index: -1;
+}
+
+.main__red__text {
+  width: 20vh;
+  height: 13vh;
+  background: #F02828;
+
+  position: fixed;
+  transform: translateY(42vh) translateX(67vw);
+}
+
+.main__red__text h2 {
+  color: #fff;
+  padding: 6px 4px;
+  font-family: "fugue";
+  font-size: 16px;
+}
+
+.main__circle {
+  background: #282828;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  transform: translateX(30vh) translateY(62vw);
+
+  position: fixed;
+  z-index: -1;
+}
+
+
+@media (min-width: 413px) and (max-width: 896px) {
+  .casino img {
+    width: 142px;
+  }
+
+  .main__red{
+    height: 379px;
+  }
+
+  .main__red__text {
+    transform: translateY(67vw) translateX(66.9vw);
+  }
+
+  .main__green__rectan:nth-child(1) {
+    height: 33vh;
+  }
+
+  .main__green__rectan:nth-child(2) {
+    height: 37.5vh;
+  }
+
+  .main__green__rectan:nth-child(3),
+  .main__green__rectan:nth-child(4),
+  .main__green__rectan:nth-child(5),
+  .main__green__rectan:nth-child(6),
+  .main__green__rectan:nth-child(7)
+  {
+    height: 41.5vh;
+  }
+
+  .main__red__text h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-height: 744px) and (max-height: 812px) {
+  .main__red {
+    height: 440px;
+  }
+
+  .main__red__text{
+    transform: translateY(34vh) translateX(67vw);
+  }
+
+  .main__green__rectan:nth-child(1) {
+    height: 37vh;
+  }
+
+  .main__green__rectan:nth-child(2) {
+    height: 41.5vh;
+  }
+
+  .main__green__rectan:nth-child(3),
+  .main__green__rectan:nth-child(4),
+  .main__green__rectan:nth-child(5),
+  .main__green__rectan:nth-child(6),
+  .main__green__rectan:nth-child(7)
+  {
+    height: 45.5vh;
+  }
+
+  .casino img {
+    width: 154px;
+  }
+
+  .main__circle {
+    transform: translateX(26vh) translateY(62vw);
+  }
+
+  .main__black{
+    height: 11vh;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px){
+  header img{
+    max-height: 677px;
+  }
+
+  .header__black_rectangle{
+    width: 197px;
+  }
+
+  .main__red__text{
+    width: 30vh;
+    transform: translateY(63vw) translateX(66.9vw);
+
+  }
+
+  .main__red__text h2 {
+    font-size: 34px;
+    padding: 14px 8px;
+
+  }
+
+  header h1{
+    padding: 64px 38px;
+  }
+
+  .main__circle {
+    height: 300px;
+    width: 300px;
+    transform: translateX(35vh) translateY(43vw);
+  }
+
+  .main__black{
+    transform: translateY(66vw);
+    width: 77vw;
+  }
+
+  .main__red {
+    height: 498px;
+    width: 316px;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+  .main__green__rectan:nth-child(1) {
+    height: 16vh;
+    width: 9vw;
+  }
+
+  .main__green__rectan:nth-child(2) {
+    height: 22.5vh;
+    width: 9vw;
+  }
+
+  .main__green__rectan:nth-child(3),
+  .main__green__rectan:nth-child(4),
+  .main__green__rectan:nth-child(5),
+  .main__green__rectan:nth-child(6),
+  .main__green__rectan:nth-child(7)
+  {
+    height: 28.5vh;
+    width: 3vh;
+  }
+
+  .casino{
+    margin-bottom: -29px;
+  }
+
+  .casino img {
+    margin-bottom: -108px;
+    width: 175px;
+  }
+
 }
 
 
 
 
+/*
 
 
-/* размер экрана фигмы и браузера не совпадает
 
-блок уходит влево
+нужно ли для телефона делать медиа?
 
-позиционирование плохо?
-
-как приклеить элемент к правому краю если он спизиционирован, float  не работает и размер экрана не тот
-
-не видно header__span__line
-
-как можно спозиционировать эти классы чтобы...
-
-картинка с полукругами не доходит до правого края, хотя right 0
+как можно спозиционировать картинку с полукругами справа?
 
 как сделать, чтобы круги доходили до низа дива
 
