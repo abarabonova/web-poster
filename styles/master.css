@@ -43,6 +43,10 @@ body {
   border-right: 30px solid transparent;
 }
 
+.header__red {
+  display: none;
+}
+
 header img {
   width: 67%;
   height: auto;
@@ -52,6 +56,10 @@ header img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.big__green__rectangle {
+  display: none;
 }
 
 header h1 {
@@ -78,17 +86,21 @@ header h1 {
 
 /* правая часть вверх */
 
-span {
-  float: right;
-}
-
 .header__black_rectangle {
-  width: 77px;
-  height: 106px;
+  width: 16vh;
+  height: 24vh;
+  position: fixed;
 
   background: #282828;
 
   z-index: 2;
+  top: 0;
+  right: 0;
+}
+
+.header__span__img {
+  width: 26vw;
+  position: absolute;
 }
 
 
@@ -118,7 +130,7 @@ header span img {
 }
 
 .main__red {
-  width: 166px;
+  width: 152px;
   height: 302px;
 
   background: #F02828;
@@ -127,8 +139,7 @@ header span img {
   bottom: 0;
 
   display: flex;
-  flex-flow: wrap column;
-  align-content: flex-end;
+  flex-flow: wrap row;
 
   z-index: 3;
 }
@@ -268,6 +279,12 @@ header span img {
 }
 
 @media (min-height: 744px) and (max-height: 812px) {
+  .header__black_rectangle {
+    width: 12vh;
+    height: 19vh;
+  }
+
+
   .main__red {
     height: 440px;
   }
@@ -379,6 +396,115 @@ header span img {
     margin-bottom: -108px;
     width: 175px;
   }
+}
+
+@media (min-width: 1024px) {
+  header img{
+    display: none;
+  }
+
+  .big__green__rectangle {
+    display: block;
+    width: 582px;
+    z-index: 1;
+  }
+
+  header h1 {
+    font-size: 4vw;
+    line-height: 4.5vw;
+    transform: translateX(8vw) translateY(-3vh);
+  }
+
+  .main__red {
+    height: 461px;
+    width: 289px;
+  }
+
+  .circle {
+    width: 72px;
+    height: 72px;
+  }
+
+  .main__circle {
+    background: #fff;
+    transform: translateX(85vh) translateY(-12vw);
+    z-index: 1;
+  }
+
+  .header__red {
+    display: block;
+    position: fixed;
+    background: #F02828;
+    z-index: 0;
+
+    height: 24vw;
+    width: 90vw;
+  }
+
+  .header__black_rectangle {
+    width: 20vw;
+    height: 39vh;
+  }
+
+  .main__black {
+    transform: translateY(31vw) translateX(582px);
+    width: 49vw;
+    height: 38vw;
+  }
+
+  .main__red__text {
+    height: 139px;
+    width: 35vh;
+    position: fixed;
+
+    top: 288px;
+    right: 0;
+
+    transform: none;
+
+    z-index: 3;
+  }
+
+  .main__red__text h2 {
+    font-size: 24px;
+    padding: 8px 8px;
+  }
+
+  .main__green__rectan:nth-child(1) {
+    height: 20.5vh;
+    width: 6vh;
+  }
+
+  .main__green__rectan:nth-child(2) {
+    height: 26.5vh;
+    width: 6vh;
+  }
+
+  .main__green__rectan:nth-child(3){
+    height: 32.5vh;
+    width: 6vh;
+
+  }
+
+  .main__green__rectan:nth-child(4){
+    height: 38.5vh;
+    width: 6vh;
+  }
+  .main__green__rectan:nth-child(5),
+  .main__green__rectan:nth-child(6),
+  .main__green__rectan:nth-child(7){
+    height: 44.5vh;
+    width: 7vh;
+  }
+
+  .casino {
+    margin-bottom: 10px;
+  }
+
+  .casino img {
+    margin-bottom: -108px;
+    width: 182px;
+  }
 
 }
 
@@ -395,6 +521,6 @@ header span img {
 
 как сделать, чтобы круги доходили до низа дива
 
-как можно убрать пробелы между дивами
+!!!!как можно убрать пробелы между дивами
 
 как позиционировать элементы такие как фишки, если изначально они идут с праваой стороны экрана, а на других носителях могут быть и в середине*/
