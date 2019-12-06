@@ -437,13 +437,13 @@ header span img {
     background: #F02828;
     z-index: 0;
 
-    height: 24vw;
+    height: 221px;
     width: 90vw;
   }
 
   .header__black_rectangle {
     width: 20vw;
-    height: 39vh;
+    height: 51vh;
   }
 
   .main__black {
@@ -506,13 +506,121 @@ header span img {
     width: 182px;
   }
 
+  .main__triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 15vh solid #282828;
+    border-right: 97px solid transparent;
+
+    position: fixed;
+    z-index: 4;
+
+    bottom: 0;
+    left: 289px;
+  }
+
+
+  .main__triangle2 {
+    width: 0;
+    height: 0;
+    border-bottom: 15vh solid #282828;
+    border-right: 97px solid transparent;
+
+    position: fixed;
+    z-index: 4;
+
+    bottom: 0;
+    left: 386px;
+  }
+  .main__triangle3 {
+    width: 0;
+    height: 0;
+    border-bottom: 15vh solid #282828;
+    border-right: 97px solid transparent;
+
+    position: fixed;
+    z-index: 4;
+
+    bottom: 0;
+    left: 482px;
+  }
+
+  .big__green__rectangle {
+    width: 582px;
+    height: 85vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main__red {
+    height: 393px;
+  }
+
+  .main__green {
+  top: 400px;
+  left: 682px;
+  }
+
+  .casino {
+    left: 859px;
+  }
+
+  .main__green__rectan:nth-child(5),
+  .main__green__rectan:nth-child(6),
+  .main__green__rectan:nth-child(7) {
+    width: 10vh;
+  }
+
+  .main__black{
+    height: 20vw;
+  }
+
 }
 
 
 
 
 /*
+BODY {
+  background: honeydew;
+  }
+DIV {
+  position: relative;
+  height: 2.4em;
+  margin: 1.5em 1em;
+  padding: .2em;
+  border: 1px solid mediumturquoise;
+  border-radius: 5px;
+  font-size: 1.2em;
+  }
+DIV:before {
+  content: attr(data-content);
+  display: inline-block;
+  position: absolute;
+  left: .2em;
+  width: 9em;
+  height: 2em;
+  padding: .2em;
+  background: mediumturquoise;
+  border-radius: 3px;
+  animation: timing 5s infinite alternate;
+  line-height: 2em;
+  cursor: pointer;
+  text-shadow: .05em .05em teal;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFF;
+  }
+DIV:hover:before{
+  animation-play-state: paused;
+  }
 
+@keyframes timing {
+  100%{
+    left: 100%;
+    margin-left: -9.6em;
+    }
+}
 
 
 нужно ли для телефона делать медиа?
