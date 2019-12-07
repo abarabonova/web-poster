@@ -238,6 +238,14 @@ header span img {
   z-index: -1;
 }
 
+.main__group__black {
+  display: none;
+}
+
+.main__group__red {
+  display: none;
+}
+
 
 @media (min-width: 413px) and (max-width: 896px) {
   .casino img {
@@ -454,7 +462,7 @@ header span img {
 
   .main__red__text {
     height: 139px;
-    width: 35vh;
+    width: 35vw;
     position: fixed;
 
     top: 288px;
@@ -572,8 +580,96 @@ header span img {
   }
 
   .main__black{
-    height: 20vw;
+    top: 318px;
+    left: 582px;
+    width: 372px;
+    height: 339px;
+    transform: none;
   }
+
+  .main__red__text {
+    top: 260px;
+    left: 721px;
+  }
+
+  .header__black_rectangle {
+    top: 0;
+    left: 762px;
+
+    width: 192px;
+  }
+
+  .header__red {
+    width: 62vw;
+  }
+
+  .main__red__top {
+    width: 478px;
+    height: 41px;
+    position: fixed;
+
+    top: 0;
+    left: 888px;
+
+    background: #F02828;
+
+    z-index: 3;
+  }
+
+  .main__green__top {
+    position: fixed;
+    width: 32vw;
+    height: 85vh;
+    left: 1222px;
+    top: 0px;
+    z-index: -1;
+
+    background: #426651;
+  }
+
+  .main__black__top {
+    position: fixed;
+    width: 224px;
+    height: 308px;
+
+    left: 1056px;
+    top: 160px;
+    z-index: -1;
+
+    background: #2A2727;
+  }
+
+  .main__group__red {
+    display: block;
+    position: fixed;
+    width: 209px;
+    height: 307px;
+    left: 1168px;
+    bottom: 0;
+  }
+
+  .main__group__black {
+    display: block;
+    position: fixed;
+    width: 49.5px;
+    height: 144.5px;
+    left: 1255px;
+    top: 16px;
+  }
+
+  header h1 {
+    font-size: 3vw;
+    line-height: 3.5vw;
+    transform: translateX(8vw) translateY(-6vh);
+  }
+}
+
+@media (min-width: 1366px) {
+  .main__green__top{
+
+  }
+
+
 
 }
 
