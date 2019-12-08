@@ -590,6 +590,7 @@ header span img {
   .main__red__text {
     top: 260px;
     left: 721px;
+    width: 399px;
   }
 
   .header__black_rectangle {
@@ -664,11 +665,110 @@ header span img {
   }
 }
 
-@media (min-width: 1366px) {
-  .main__green__top{
-
+@media (min-width: 1440px) {
+  .big__green__rectangle {
+    max-height: none;
+    max-width: none;
+    height: 85vh;
+    width: 40vw;
   }
 
+  .main__red {
+    width: calc(6vw * 4);
+    height: 55vh;
+  }
+
+  .circle {
+    height: 6vw;
+    width: 6vw;
+  }
+
+  .main__triangle {
+    left: calc(6vw * 4)
+  }
+
+  .main__triangle2 {
+    left: calc(6vw * 4 + 97px)
+  }
+
+  .main__triangle3 {
+    left: calc(6vw * 4 + 97px + 97px)
+  }
+
+  .main__green__top {
+    right: 0;
+    left: auto;
+    width: 8vw;
+  }
+
+  .main__group__red {
+    width: 14vw;
+    height: 21vw;
+    right: 2vw;
+    left: auto;
+  }
+
+  .main__green {
+    right: 20vw;
+    left: auto;
+  }
+
+  .main__black__top {
+    width: 15vw;
+    height: 20vw;
+    left: auto;
+    right: 6vw;
+    top: 17vw;
+  }
+
+  .main__red__text {
+    top: 39vh;
+    left: auto;
+    right: 16vw;
+    width: 28vw;
+    height: 10vw;
+  }
+
+  .header__black_rectangle {
+    left: auto;
+    width: 14vw;
+    height: 27vw;
+    right: 27vw;
+  }
+
+  .main__red__top {
+    left: auto;
+    width: 31vw;
+    height: 2.5vw;
+    right: 4vw;
+  }
+
+  .main__black {
+    left: 40vw;
+    top: 27vw;
+    width: 25vw;
+    height: 37vw;
+  }
+
+  .casino {
+    left: 61vw;
+  }
+
+  .casino img {
+    width: 17.5vw;
+    margin-bottom: -12vw;
+  }
+
+  .header__red {
+    height: 16vw;
+    width: 59vw;
+  }
+
+  .main__circle {
+    transform: none;
+    top: -5vw;
+    left: 50vw;
+  }
 
 
 }
