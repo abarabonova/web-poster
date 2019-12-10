@@ -474,8 +474,8 @@ header span img {
   }
 
   .main__red__text h2 {
-    font-size: 24px;
-    padding: 8px 8px;
+    font-size: 1.6vw;
+    padding: 0.4vw;
   }
 
   .main__green__rectan:nth-child(1) {
@@ -518,7 +518,7 @@ header span img {
     width: 0;
     height: 0;
     border-bottom: 15vh solid #282828;
-    border-right: 97px solid transparent;
+    border-right: 5.3vw solid transparent;
 
     position: fixed;
     z-index: 4;
@@ -532,7 +532,7 @@ header span img {
     width: 0;
     height: 0;
     border-bottom: 15vh solid #282828;
-    border-right: 97px solid transparent;
+    border-right: 5.3vw solid transparent;
 
     position: fixed;
     z-index: 4;
@@ -544,7 +544,7 @@ header span img {
     width: 0;
     height: 0;
     border-bottom: 15vh solid #282828;
-    border-right: 97px solid transparent;
+    border-right: 5.3vw solid transparent;
 
     position: fixed;
     z-index: 4;
@@ -688,17 +688,17 @@ header span img {
   }
 
   .main__triangle2 {
-    left: calc(6vw * 4 + 97px)
+    left: calc(6vw * 4 + 5.3vw)
   }
 
   .main__triangle3 {
-    left: calc(6vw * 4 + 97px + 97px)
+    left: calc(6vw * 4 + 10.6vw)
   }
 
   .main__green__top {
     right: 0;
     left: auto;
-    width: 8vw;
+    width: 9vw;
   }
 
   .main__group__red {
@@ -768,6 +768,30 @@ header span img {
     transform: none;
     top: -5vw;
     left: 50vw;
+  }
+
+  .main__group__black {
+    left: auto;
+    right: 3vw;
+    height: 31vh;
+    width: auto;
+    top: -0.7vh;
+  }
+
+  header h1 {
+    transform: none;
+    top: 6vh;
+    left: 6vw;
+    font-size: 4vw;
+    line-height: 4.5vw;
+  }
+
+  .main__circle {
+    top: -8vw;
+    left: 49vw;
+
+    width: 18vw;
+    height: 18vw;
   }
 
 
