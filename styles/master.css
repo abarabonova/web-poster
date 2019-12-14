@@ -75,13 +75,14 @@ header h1 {
 }
 
 .header__box {
-  width: 27px;
-  height: 190px;
+  width: 2vw;
+  height: 20vh;
   background: #282828;
 
   position: absolute;
   top: 116px;
   z-index: 2;
+  animation: shake 2s linear infinite;
 }
 
 /* правая часть вверх */
@@ -199,6 +200,18 @@ header span img {
 .casino img {
   width: 124px;
   margin-bottom: -80px;
+  animation: rotate 5s linear infinite;
+}
+
+.casino img:nth-child(1) {
+  animation: rotate 13s linear infinite;
+}
+
+.casino img:nth-child(2) {
+  animation: rotate2 5s linear infinite;
+}
+.casino img:nth-child(3) {
+  animation: rotate2 12s linear infinite;
 }
 
 .main__black {
@@ -424,7 +437,7 @@ header span img {
   }
 
   .main__red {
-    height: 461px;
+    height: 54vh;
     width: 289px;
   }
 
@@ -793,8 +806,48 @@ header span img {
     width: 18vw;
     height: 18vw;
   }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(21vh);
+  }
+  50% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(21vh);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
 
+.casino img:hover {
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  animation-play-state:paused;
 }
 
 
