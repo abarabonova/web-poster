@@ -44,7 +44,7 @@ body {
 }
 
 .white_rectangle:hover {
-  border-top: 30px solid #ff0000;  
+  border-top: 30px solid #ff0000;
 }
 
 .header__red {
@@ -106,8 +106,13 @@ header h1 {
 .header__span__img {
   width: 26vw;
   position: absolute;
-}
+  top: 24vh;
+  right: 0;
+  left: auto;
+  height: 25vw;
+  width: auto;
 
+}
 
 .header__span {
   display: flex;
@@ -266,6 +271,10 @@ header span img {
 
 
 @media (min-width: 413px) and (max-width: 896px) {
+  .casino{
+    margin-right: -30px;
+  }
+
   .casino img {
     width: 142px;
   }
@@ -314,6 +323,10 @@ header span img {
     height: 19vh;
   }
 
+  .header__span__img {
+    top: 19vh;
+  }
+
 
   .main__red {
     height: 440px;
@@ -352,6 +365,76 @@ header span img {
     height: 11vh;
   }
 }
+
+@media (min-height: 813px) {
+  .main__red {
+    height: 453px;
+  }
+
+  .header__black_rectangle {
+    width: 12vh;
+    height: 17vh;
+  }
+
+  .header__span__img {
+    top: 17vh;
+  }
+
+  .main__black {
+    transform: translateY(85vw);
+    height: 18vh;
+  }
+
+  .casino img {
+    width: 17vh;
+  }
+
+  header img {
+    height: 55vh;
+    max-height: none;
+  }
+
+  .main__circle {
+    transform: translateY(64vw);
+  }
+
+  .main__red__text {
+    transform: translateY(38vh) translateX(67vw);
+  }
+}
+
+@media (min-width: 585px) {
+  .main__red {
+    height: 518px;
+  }
+
+  .main__green__rectan {
+    width: 42px;
+  }
+
+  .main__green__rectan:nth-child(1){
+    height: 16vh;
+  }
+
+  .main__green__rectan:nth-child(2){
+    height: 20vh;
+  }
+
+  .casino img {
+    margin-bottom: -128px;
+  }
+
+  .header__black_rectangle {
+    width: 15vh;
+  }
+
+  .main__red__text {
+    width: 24vh;
+  }
+
+
+}
+
 
 @media (min-width: 767px){
   header img{
@@ -764,6 +847,7 @@ header span img {
 
   .casino {
     left: 61vw;
+    max-height: 39vh;
   }
 
   .casino img {
