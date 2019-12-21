@@ -434,6 +434,8 @@ header span img {
 
   .casino img {
     margin-bottom: -128px;
+    width: 19vh;
+    max-width: 200px;
   }
 
   .header__black_rectangle {
@@ -471,7 +473,6 @@ header span img {
   .main__red__text{
     width: 30vh;
     transform: translateY(63vw) translateX(66.9vw);
-
   }
 
   .main__red__text h2 {
