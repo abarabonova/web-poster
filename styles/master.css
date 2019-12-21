@@ -405,7 +405,11 @@ header span img {
 
 @media (min-width: 585px) {
   .main__red {
-    height: 518px;
+    height: 578px;
+  }
+
+  .main__black {
+    top: -28px;
   }
 
   .main__green__rectan {
@@ -429,7 +433,12 @@ header span img {
   }
 
   .main__red__text {
-    width: 24vh;
+    width: 30vh;
+    transform: translateY(46vh) translateX(67vw);
+  }
+
+  header img {
+    height: 56vh;
   }
 
 
@@ -914,6 +923,7 @@ header span img {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotate2 {
   0% {
     transform: rotate(0deg);
@@ -932,59 +942,3 @@ header span img {
   -moz-animation-play-state:paused;
   animation-play-state:paused;
 }
-
-
-
-
-/*
-BODY {
-  background: honeydew;
-  }
-DIV {
-  position: relative;
-  height: 2.4em;
-  margin: 1.5em 1em;
-  padding: .2em;
-  border: 1px solid mediumturquoise;
-  border-radius: 5px;
-  font-size: 1.2em;
-  }
-DIV:before {
-  content: attr(data-content);
-  display: inline-block;
-  position: absolute;
-  left: .2em;
-  width: 9em;
-  height: 2em;
-  padding: .2em;
-  background: mediumturquoise;
-  border-radius: 3px;
-  animation: timing 5s infinite alternate;
-  line-height: 2em;
-  cursor: pointer;
-  text-shadow: .05em .05em teal;
-  text-align: center;
-  text-transform: capitalize;
-  color: #FFF;
-  }
-DIV:hover:before{
-  animation-play-state: paused;
-  }
-
-@keyframes timing {
-  100%{
-    left: 100%;
-    margin-left: -9.6em;
-    }
-}
-
-
-нужно ли для телефона делать медиа?
-
-как можно спозиционировать картинку с полукругами справа?
-
-как сделать, чтобы круги доходили до низа дива
-
-!!!!как можно убрать пробелы между дивами
-
-как позиционировать элементы такие как фишки, если изначально они идут с праваой стороны экрана, а на других носителях могут быть и в середине*/
