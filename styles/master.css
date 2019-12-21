@@ -75,7 +75,7 @@ header h1 {
   padding: 24px 18px;
   position: fixed;
   margin-top: 77px;
-  z-index: 3;
+  z-index: 6;
 }
 
 .header__box {
@@ -417,11 +417,19 @@ header span img {
   }
 
   .main__green__rectan:nth-child(1){
-    height: 16vh;
+    height: 22vh;
   }
 
   .main__green__rectan:nth-child(2){
-    height: 20vh;
+    height: 27vh;
+  }
+
+  .main__green__rectan:nth-child(3),
+  .main__green__rectan:nth-child(4),
+  .main__green__rectan:nth-child(5),
+  .main__green__rectan:nth-child(6),
+  .main__green__rectan:nth-child(7) {
+    height: 31.5vh;
   }
 
   .casino img {
@@ -437,17 +445,23 @@ header span img {
     transform: translateY(46vh) translateX(67vw);
   }
 
+  .main__red__text h2 {
+    font-size: 24px;
+  }
+
   header img {
     height: 56vh;
   }
-
-
 }
 
 
 @media (min-width: 767px){
   header img{
     max-height: 677px;
+  }
+
+  .header__span__img {
+    height: 18vw;
   }
 
   .header__black_rectangle{
@@ -462,8 +476,7 @@ header span img {
 
   .main__red__text h2 {
     font-size: 34px;
-    padding: 14px 8px;
-
+    padding: 8px 8px;
   }
 
   header h1{
@@ -504,8 +517,7 @@ header span img {
   .main__green__rectan:nth-child(4),
   .main__green__rectan:nth-child(5),
   .main__green__rectan:nth-child(6),
-  .main__green__rectan:nth-child(7)
-  {
+  .main__green__rectan:nth-child(7){
     height: 28.5vh;
     width: 3vh;
   }
@@ -641,7 +653,6 @@ header span img {
     bottom: 0;
   }
 
-
   .main__triangle {
     bottom: 0;
     left: calc(7vw*4);
@@ -654,8 +665,6 @@ header span img {
   .main__triangle3 {
     left: calc(7vw*4 + 9.3vw + 9.3vw);
   }
-
-
 
   .big__green__rectangle {
     width: 582px;
@@ -862,6 +871,7 @@ header span img {
   .casino img {
     width: 17.5vw;
     margin-bottom: -12vw;
+    max-width: none;
   }
 
   .header__red {
