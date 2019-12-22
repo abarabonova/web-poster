@@ -102,12 +102,11 @@ header h1 {
 .header__span__img {
   width: 26vw;
   position: absolute;
-  top: 24vh;
+  top: 23.9vh;
   right: 0;
   left: auto;
   height: 25vw;
   width: auto;
-
 }
 
 .header__span {
