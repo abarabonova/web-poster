@@ -118,9 +118,7 @@ header h1 {
   width: 100px;
   height: 9px;
   padding-top: 8px;
-
   color: #F02828;
-
   position: fixed;
   z-index: 3;
 }
@@ -211,11 +209,11 @@ header span img {
 }
 
 .casino img:nth-child(2) {
-  animation: rotate2 5s linear infinite;
+  animation: rotate 5s reverse infinite;
 }
 
 .casino img:nth-child(3) {
-  animation: rotate2 12s linear infinite;
+  animation: rotate 15s reverse infinite;
 }
 
 .main__black {
@@ -962,18 +960,6 @@ header span img {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 
