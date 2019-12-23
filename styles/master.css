@@ -867,7 +867,7 @@ header span img {
   }
 
   .header__span__img {
-    top: 19vh;
+    top: 20vh;
     left: auto;
     right: 23.6vw;
     height: 20vh;
@@ -877,7 +877,7 @@ header span img {
     left: auto;
     width: 31vw;
     height: 2.5vw;
-    right: 4vw;
+    right: 3vw;
   }
 
   .main__black {
