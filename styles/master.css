@@ -222,7 +222,7 @@ header span img {
   background-color: #282828;
 
   position: fixed;
-  transform: translateY(90vw);
+  transform: translateY(85vw);
   z-index: -1;
 }
 
@@ -304,10 +304,7 @@ header span img {
   }
 
   .main__circle {
-    transform: translateX(33vh) translateY(56vw);
-  }
-
-  .main__circle {
+    transform: translateX(-1vh) translateY(56vw);
     top: -1%;
     right: 20%;
   }
@@ -323,16 +320,12 @@ header span img {
     top: 19vh;
   }
 
-  .main__circle {
-
-  }
-
   .main__red {
     height: 440px;
   }
 
   .main__red__text{
-    transform: translateY(34vh) translateX(67vw);
+    transform: translateY(39vh) translateX(67vw);
   }
 
   .main__green__rectan:nth-child(1) {
@@ -357,7 +350,9 @@ header span img {
   }
 
   .main__circle {
-    transform: translateX(26vh) translateY(62vw);
+    transform: translateX(34vh) translateY(58vw);
+    top: auto;
+    right: auto;
   }
 
   .main__black{
@@ -394,7 +389,7 @@ header span img {
   }
 
   .main__circle {
-    transform: translateY(64vw);
+    transform: translateY(64vw) translateX();
   }
 
   .main__red__text {
@@ -857,7 +852,7 @@ header span img {
   }
 
   .main__red__text {
-    top: 39vh;
+    top: 40vh;
     left: auto;
     right: 16vw;
     width: 28vw;
